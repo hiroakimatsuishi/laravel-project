@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.header {
+  display: inline-block;
+  font-size: 45px;
+  margin: 0;
+  font-family: 'Lobster', cursive;
+}
+
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  vertical-align: -2.7px;
+}
+
+.icon-image {
+  width: 100%;
+  height: 30px;
+}
+
+.contents-on-the-left {
+  padding: 15px 20px;
+}
+
+.contents-on-the-right {
+  height: 100%;
+  width: 42%;
+  padding: 35px;
+  border-radius: 1px;
+  background-color:rgba(255,255,255,0.5);
+}
+
+.background-image {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../images/login-image.jpg");
+}
+
+.login-contents {
+  float: left;
+}
+
+.login-content {
+  margin-top: 30px;
+}
+
+.login-content:first-child {
+  margin-top: 0;
+}
+
+.instruction-content {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.login-instructions {
+  font-size: 0;
+  margin: 10px auto 0;
+}
+
+.login-instruction {
+  text-align: center;
+  margin-left: 30px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.login-instruction:first-child {
+  margin-left: 0;
+}
+
+.instruction-icon {
+  font-size: 95px;
+  color: #FF6928;
+}
+
+.instruction-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.instruction-text-capital {
+  font-size: 30px;
+  color: #FF9228;
+}
+
+.instruction-font-style {
+  font-family: 'Cabin', sans-serif;
+}
+
+.login-parts {
+  margin-top: 15px;
+}
+
+.login-parts:first-child {
+  margin-top: 0;
+}
+
+.input-label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.login-input {
+  width: 100%;
+  height: 45px;
+  font-size: 1.25rem;
+  margin-top: 3px;
+  padding: 5px 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}

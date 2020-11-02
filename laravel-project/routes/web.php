@@ -14,3 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('index', function () {
+  return view('index');
+});
+
+Route::get('create_account', function () {
+  return view('create_account');
+});
+
+Route::get('create_account_confirm', function () {
+  return view('create_account_confirm');
+});
+
+Route::get('create_account_success', function () {
+  return view('create_account_success');
+});
+
+Route::get('top_page', function () {
+  return view('top_page');
+});
