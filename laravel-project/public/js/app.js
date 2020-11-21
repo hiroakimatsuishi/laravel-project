@@ -1982,7 +1982,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "\n.calendars-box {\n  display: flex;\n}\n.day {\n  width: 85px;\n  height: 85px;\n  background: rgba(194, 184, 184, 0.479);\n  border: 1px solid black;\n}\n.calendar-inner {\n  margin-top: 15px;\n}\n.calendar-content {\n  margin-top: 10px;\n}\n.calendar-content:first-child {\n  margin-top: 0;\n}\n.calendar-header {\n  font-size: 25px;\n  font-weight: bold;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "\n.calendars-box {\n  display: flex;\n}\n.day {\n  width: 85px;\n  height: 85px;\n  background: rgba(194, 184, 184, 0.479);\n  border: 1px solid black;\n}\n.calendar-content {\n  margin-top: 10px;\n}\n.calendar-content:first-child {\n  margin-top: 0;\n}\n.calendar-header {\n  font-size: 25px;\n  font-weight: bold;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -41593,7 +41593,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "calendar-inner" }, [
+  return _c("div", [
     _c("div", { staticClass: "calendar-content" }, [
       _c("p", { staticClass: "calendar-header" }, [
         _vm._v("Today is " + _vm._s(_vm.currentDate))
@@ -53795,6 +53795,8 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./googleMap */ "./resources/js/googleMap.js");
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
@@ -53936,6 +53938,34 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/googleMap.js":
+/*!***********************************!*\
+  !*** ./resources/js/googleMap.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Create the script tag, set the appropriate attributes
+var script = document.createElement('script');
+script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAsgKGCp7kGasM0oOA8wbgbJN3-arK3QAU&callback=initMap';
+script.defer = true; // Attach your callback function to the `window` object
+
+window.initMap = function () {
+  // JS API is loaded and available
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {
+      lat: -34.397,
+      lng: 150.644
+    },
+    zoom: 8
+  });
+}; // Append the 'script' element to 'head'
+
+
+document.head.appendChild(script);
+
+/***/ }),
+
 /***/ 0:
 /*!***********************************!*\
   !*** multi ./resources/js/app.js ***!
@@ -53943,7 +53973,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/matsuishihiroaki/Documents/portfolio/laravel-project/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/html/laravel-project/resources/js/app.js */"./resources/js/app.js");
 
 
 /***/ })
