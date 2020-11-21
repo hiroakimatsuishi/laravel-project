@@ -5,6 +5,8 @@
  */
 
 require('./bootstrap');
+require('./googleMap');
+
 
 window.Vue = require('vue');
 

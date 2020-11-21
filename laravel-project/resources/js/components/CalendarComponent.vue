@@ -1,5 +1,5 @@
 <template>
-  <div class="calendar-inner">
+  <div>
     <div class="calendar-content">
       <p class="calendar-header">Today is {{ currentDate }}</p>
     </div>
@@ -66,9 +66,6 @@ export default {
   height: 85px;
   background: rgba(194, 184, 184, 0.479);
   border: 1px solid black;
-}
-.calendar-inner {
-  margin-top: 15px;
 }
 .calendar-content {
   margin-top: 10px;
